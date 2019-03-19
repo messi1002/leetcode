@@ -38,7 +38,7 @@ bool isHappy(int n) {
             sum += d*d;
         }
         
-        // 判断是否进入上述循环。
+        // 判断是否进入上述死循环。
         if (sum == 4)
             return false;
          
