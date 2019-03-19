@@ -1,0 +1,50 @@
+1.哈希表
+
+bool isHappy(int n) {
+    // 哈希表。
+    int hash[500] = {0}, sum = 0;
+    
+    while (n != 1) {
+        // 各个位数求平方和。
+        while (n > 0) {
+            int d = n % 10;
+            n = n / 10;
+            sum += d*d;
+        }
+        
+        // 判断是否陷入死循环。
+        if (hash[sum] == 0) {
+            hash[sum] = 1;
+            n = sum;
+            sum = 0;
+        }
+        else
+            return false;
+    }
+    
+    return true;
+}
+
+ 
+2.数学方法
+
+bool isHappy(int n) {
+    int sum = 0;
+    
+    while (n != 1) {
+        while (n > 0) {
+            int d = n % 10;
+            n = n / 10;
+            sum += d*d;
+        }
+        
+        // 判断是否进入上述循环。
+        if (sum == 4)
+            return false;
+         
+        n = sum;
+        sum = 0;
+    }
+    
+    return true;
+}
