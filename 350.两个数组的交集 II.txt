@@ -1,0 +1,40 @@
+1.排序 + 双指针查找
+
+// 快排函数(升序)。
+int compare(const void* a, const void* b) {
+	/*
+	bug: 若是将 > 改为 -,可能溢出整型范围。
+	例如[-2147483648,1]在排序时会导致异常: runtime error: signed integer overflow: -2147483648 - 1 cannot be represented in type 'int' (solution.c)
+	*/
+    return *(int*)a > *(int*)b; 
+}
+
+int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize) {    
+    // 排序。
+    qsort(nums1, nums1Size, sizeof(int), compare);
+    qsort(nums2, nums2Size, sizeof(int), compare);
+    
+    int pos1 = 0, pos2 = 0; 
+    int* result = malloc(sizeof(int)*nums1Size);
+    *returnSize = 0;
+    
+    // 双指针。
+    while (pos1 < nums1Size && pos2 < nums2Size) {
+        if (nums1[pos1] < nums2[pos2])
+            pos1++;
+        else if (nums1[pos1] > nums2[pos2])
+            pos2++;
+        else {
+            result[(*returnSize)++] = nums1[pos1];
+            pos1++;
+            pos2++;
+        }
+    }
+    
+    return result;
+}
+
+
+2.哈希表
+
+代码参考：https://leetcode.com/problems/intersection-of-two-arrays-ii/discuss/82242/A-simple-C-solution-Accepted
