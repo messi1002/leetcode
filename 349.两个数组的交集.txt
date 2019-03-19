@@ -1,0 +1,57 @@
+1.哈希表
+
+int* intersection(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize) {
+    // 哈希表。
+    int hash[1000] = {0};
+    int* result = malloc(sizeof(int)*nums1Size);
+    *returnSize = 0;
+
+    for (int i = 0; i < nums1Size; i++)
+        hash[nums1[i]]++;
+    for (int i = 0; i < nums2Size; i++) {
+        // 查找重复数字。
+        if (hash[nums2[i]] > 0) {
+            result[(*returnSize)++] = nums2[i];
+            // 去重。
+            hash[nums2[i]] = 0;
+        }
+    }
+    
+    return result;
+}
+
+
+2.排序 + 双指针查找
+
+// 快排函数(升序)。
+int compare(const void* a, const void* b) {
+    return (*(int*)a)-(*(int*)b); 
+}
+
+int* intersection(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize) {    
+    // 排序。
+    qsort(nums1, nums1Size, sizeof(int), compare);
+    qsort(nums2, nums2Size, sizeof(int), compare);
+    
+    int pos1 = 0, pos2 = 0; 
+    int* result = malloc(sizeof(int)*nums1Size);
+    *returnSize = 0;
+    
+    // 双指针。
+    while (pos1 < nums1Size && pos2 < nums2Size) {
+        if (nums1[pos1] < nums2[pos2])
+            pos1++;
+        else if (nums1[pos1] > nums2[pos2])
+            pos2++;
+        else {
+            // 去重。
+            if (*returnSize == 0 || nums1[pos1] != result[*returnSize-1])
+                result[(*returnSize)++] = nums1[pos1];
+            
+            pos1++;
+            pos2++;
+        }
+    }
+    
+    return result;
+}
