@@ -1,4 +1,4 @@
-1.¹şÏ£±í¡£
+1.¹şÏ£±í
 
 bool isAnagram(char* s, char* t) {
     int hash[26] = {0}, len1 = strlen(s), len2 = strlen(t);
