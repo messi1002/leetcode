@@ -21,7 +21,7 @@ bool isAnagram(char* s, char* t) {
 
 // 快排函数(升序)。
 int compare(const void* a, const void* b) {
-    return (*(char*)b)-(*(char*)a);
+    return (*(char*)a)-(*(char*)b);
 }
 
 // 排序后再判断两字符串是否相等。
