@@ -7,10 +7,10 @@ int* intersection(int* nums1, int nums1Size, int* nums2, int nums2Size, int* ret
     *returnSize = 0;
 
     for (int i = 0; i < nums1Size; i++)
-        hash[nums1[i]]++;
+        hash[nums1[i]] = 1;
     for (int i = 0; i < nums2Size; i++) {
         // 查找重复数字。
-        if (hash[nums2[i]] > 0) {
+        if (hash[nums2[i]] == 1) {
             result[(*returnSize)++] = nums2[i];
             // 去重。
             hash[nums2[i]] = 0;
