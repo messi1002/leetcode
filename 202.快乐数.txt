@@ -2,9 +2,11 @@
 
 bool isHappy(int n) {
     // 哈希表。
-    int hash[500] = {0}, sum = 0;
+    int hash[500] = {0};
     
     while (n != 1) {
+        int sum = 0;
+        
         // 各个位数求平方和。
         while (n > 0) {
             int d = n % 10;
@@ -16,7 +18,6 @@ bool isHappy(int n) {
         if (hash[sum] == 0) {
             hash[sum] = 1;
             n = sum;
-            sum = 0;
         }
         else
             return false;
@@ -29,9 +30,9 @@ bool isHappy(int n) {
 2.数学方法
 
 bool isHappy(int n) {
-    int sum = 0;
-    
     while (n != 1) {
+        int sum = 0;
+
         while (n > 0) {
             int d = n % 10;
             n = n / 10;
@@ -43,8 +44,29 @@ bool isHappy(int n) {
             return false;
          
         n = sum;
-        sum = 0;
     }
     
     return true;
+}
+
+
+3.数学方法优化
+
+已知 2、3、4、5、6 都不是快乐数，1、7是快乐数。
+
+bool isHappy(int n) {
+    while (n > 6) {
+        int sum = 0;
+
+        while (n > 0) {
+            int d = n % 10;
+            n = n / 10;
+            sum += d*d;
+        }
+        
+        // 若 n <= 6 则跳出循环，此时若 n == 1，则为快乐数，若 n == 2/3/4/5/6，则不是快乐数(即一个数在循环的过程中，若循环到非快乐数，则这个数不可能为快乐数)。
+        n = sum;
+    }
+    
+    return n == 1;
 }
