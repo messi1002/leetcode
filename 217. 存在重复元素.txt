@@ -23,10 +23,10 @@ bool containsDuplicate(int* nums, int numsSize) {
         hash[i] = 0;
     for (int i = 0; i < numsSize; i++) {
         // 判断元素是否已经出现过。
-        if (hash[nums[i]-min] > 0)
+        if (hash[nums[i]-min] == 1)
             return true;
         
-        hash[nums[i]-min]++;
+        hash[nums[i]-min] = 1;
     }
     
     return false;
