@@ -3,9 +3,9 @@
 // 快排函数(升序)。
 int compare(const void* a, const void* b) {
     /*
-    bug: 若是将 > 改为 -,可能溢出整型范围。
-    如测试数据: [-2147483648,1],在排序时会导致异常: runtime error: signed integer overflow: -2147483648 - 1 cannot be represented in type 'int' (solution.c)
-    */
+     bug: 若是将 > 改为 -,可能溢出整型范围。
+     如测试数据: [-2147483648,1],在排序时会导致异常: runtime error: signed integer overflow: -2147483648 - 1 cannot be represented in type 'int' (solution.c)
+     */
     return *(int*)a > *(int*)b; 
 }
 
