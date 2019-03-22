@@ -91,3 +91,40 @@ int* twoSum(int* nums, int numsSize, int target) {
     
     return NULL;
 }
+
+
+4.uthash
+
+// uthash是一个用c语言编写的开源库，使用宏实现了哈希表的增删改查等功能。
+int* twoSum(int* nums, int numsSize, int target) {    
+    struct hash {
+        int key;
+        int value;
+        // makes this structure hashable.
+        UT_hash_handle hh; 
+    };
+    
+    struct hash *hashTable = NULL;
+    int* result = malloc(sizeof(int)*2);
+    
+    for (int i = 0; i < numsSize; i++) {
+        struct hash *h;
+        // 查找键值对。
+        HASH_FIND_INT(hashTable, nums+i, h);
+        
+        if (h) {
+            result[0] = i;
+            result[1] = h->value;
+            return result;
+        } 
+        else {
+            h = malloc(sizeof(struct hash));
+            h->key = target-nums[i];
+            h->value = i;
+            // 添加键值对。
+            HASH_ADD_INT(hashTable, key, h);
+        }
+    }
+    
+    return result;
+}
