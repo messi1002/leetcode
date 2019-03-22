@@ -21,7 +21,47 @@ int* intersection(int* nums1, int nums1Size, int* nums2, int nums2Size, int* ret
 }
 
 
-2.排序 + 双指针查找
+2.uthash
+
+// uthash是一个用c语言编写的开源库，使用宏实现了哈希表的增删改查等功能。
+int* intersection(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize) {
+    struct hash {
+        int value;
+        // makes this structure hashable.
+        UT_hash_handle hh; 
+    };
+    
+    struct hash *hashTable = NULL;
+    int* result = malloc(sizeof(int)*nums1Size);
+    
+    for (int i = 0; i < nums1Size; i++) {
+        struct hash *h;
+        // 查找值。
+        HASH_FIND_INT(hashTable, nums1+i, h);
+        
+        if (!h) {
+            h = malloc(sizeof(struct hash));
+            h->value = nums1[i];
+            // 若值不存在则添加。
+            HASH_ADD_INT(hashTable, value, h);
+        }
+    }
+    for (int i = 0; i < nums2Size; i++) {
+        struct hash *h;
+        HASH_FIND_INT(hashTable, nums2+i, h);
+        
+        // 找到交集元素后，得从哈希表中删除它(因为输出结果中的每个元素是唯一的)。
+        if (h) {
+            result[(*returnSize)++] = h->value;
+            HASH_DEL(hashTable, h);
+        }
+    }
+    
+    return result;
+}
+
+
+3.排序 + 双指针查找
 
 // 快排函数(升序)。
 int compare(const void* a, const void* b) {
