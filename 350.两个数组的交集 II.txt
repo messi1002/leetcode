@@ -77,8 +77,3 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
     
     return result;
 }
-
-
-2.¹şÏ£±í
-
-´úÂë²Î¿¼£ºhttps://leetcode.com/problems/intersection-of-two-arrays-ii/discuss/82242/A-simple-C-solution-Accepted
