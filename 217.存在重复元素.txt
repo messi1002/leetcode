@@ -33,7 +33,38 @@ bool containsDuplicate(int* nums, int numsSize) {
 }
 
 
-2.排序
+2.uthash
+
+// uthash是一个用c语言编写的开源库，使用宏实现了哈希表的增删改查等功能。
+bool containsDuplicate(int* nums, int numsSize) {
+    struct hash {
+        int value;
+        // makes this structure hashable.
+        UT_hash_handle hh; 
+    };
+    
+    struct hash *hashTable = NULL;
+    
+    for (int i = 0; i < numsSize; i++) {
+        struct hash *h;
+        // 查找值。
+        HASH_FIND_INT(hashTable, nums+i, h);
+        
+        if (h)
+            return true;
+        else {
+            h = malloc(sizeof(struct hash));
+            h->value = nums[i];
+            // 若值不存在则添加。
+            HASH_ADD_INT(hashTable, value, h);
+        }
+    }
+    
+    return false;
+}
+
+
+3.排序
 
 // 快排函数(升序)。
 int compare(const void* a, const void* b) {
@@ -52,7 +83,7 @@ bool containsDuplicate(int* nums, int numsSize) {
 }
 
 
-3.暴力解法
+4.暴力解法
 
 bool containsDuplicate(int* nums, int numsSize) {
     for (int i = 0; i < numsSize; i++) {
