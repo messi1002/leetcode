@@ -1,6 +1,7 @@
 # LeetCode-C
 Leetcode algorithm solution in  C
 
+[1.两数之和](https://messi1002.top/2019/03/22/LeetCode-1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%88Easy%EF%BC%89C%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/)<br/>
 [202.快乐数](https://messi1002.top/2019/03/20/LeetCode-202-%E5%BF%AB%E4%B9%90%E6%95%B0%EF%BC%88Easy%EF%BC%89C%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/#more)<br/>
 [205.同构字符串](https://messi1002.top/2019/03/21/LeetCode-205-%E5%90%8C%E6%9E%84%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%88Easy%EF%BC%89C%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/)<br/>
 [217.存在重复元素](https://messi1002.top/2019/03/20/LeetCode-217-%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0%EF%BC%88Easy%EF%BC%89C%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/)<br/>
