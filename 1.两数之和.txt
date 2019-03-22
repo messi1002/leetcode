@@ -56,6 +56,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 
 
 3.一遍哈希表
+
 int* twoSum(int* nums, int numsSize, int target) {   
     int* result = (int*)malloc(sizeof(int)*2);
     int min = INT_MAX, max = INT_MIN;
@@ -74,6 +75,7 @@ int* twoSum(int* nums, int numsSize, int target) {
     // 初始化哈希表。
     for (int i = 0; i < len; i++)
         hash[i] = -1;
+
     // 迭代1和迭代2一起进行，即边将每个元素的值和它的索引添加到表中，边检查每个元素所对应的目标元素(target-nums[i])是否存在于表中。
     for (int i = 0; i < numsSize; i++) {
         int diff = target-nums[i]-min;
