@@ -1,4 +1,4 @@
-1.哈希表+排序
+1.哈希表 + 排序
 
 // 快排函数(降序)。
 // 注意:只需要排序arr[i][0](代表不同字符出现的次数)。
@@ -37,7 +37,7 @@ char* frequencySort(char* s) {
 }
 
 
-2. 哈希表+字符数组
+2. 哈希表 + 字符数组
 
 char* frequencySort(char* s) {
     int hash[128] = {0}, len = strlen(s);
