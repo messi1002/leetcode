@@ -1,7 +1,6 @@
 # LeetCode-C
-Leetcode algorithm solution in  C
-#### The code is included in the file, and the following link is the Q&A blog.
-<br/>
+Leetcode algorithm solution in C. <br/>
+The code is included in the file, and the following link is the Q&A blog.<br/>
 
 [1.两数之和](https://messi1002.top/2019/03/22/LeetCode-1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C%EF%BC%88Easy%EF%BC%89C%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/)<br/>
 [202.快乐数](https://messi1002.top/2019/03/20/LeetCode-202-%E5%BF%AB%E4%B9%90%E6%95%B0%EF%BC%88Easy%EF%BC%89C%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/#more)<br/>
