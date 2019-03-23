@@ -51,8 +51,9 @@ int** threeSum(int* nums, int numsSize, int* returnSize) {
 }
 
     
-2.排序 + 哈希表
+2.排序 + 哈希表(uthash)
 
+// uthash是一个用c语言编写的开源库，使用宏实现了哈希表的增删改查等功能。
 // 快排函数(升序)。
 int compare(const void* a, const void* b) {
     return (*(int*)a)-(*(int*)b);
