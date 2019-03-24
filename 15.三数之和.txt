@@ -11,7 +11,7 @@ int** threeSum(int* nums, int numsSize, int* returnSize) {
     
     qsort(nums, numsSize, sizeof(int), compare);   
 
-    for (int i = 0; i < numsSize-1; i++) {
+    for (int i = 0; i < numsSize-2; i++) {
         int pos1 = i+1, pos2 = numsSize-1;
         
         // 去除重复值。
@@ -70,7 +70,7 @@ int** threeSum(int* nums, int numsSize, int* returnSize) {
     qsort(nums, numsSize, sizeof(int), compare);      
 
     // 可以转化成 1.两数之和，即a+b=-c。
-    for (int i = 0; i < numsSize; i++) {
+    for (int i = 0; i < numsSize-2; i++) {
         struct hash *hashTable = NULL;
         
         // 去除重复值。
