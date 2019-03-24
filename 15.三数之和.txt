@@ -79,8 +79,8 @@ int** threeSum(int* nums, int numsSize, int* returnSize) {
         // 寻找两个数，使其和等于-nums[i]。    
         for (int j = i+1; j < numsSize; j++) {
             struct hash *h;
+            // 边将nums[j]添加到哈希表中，边检查每个元素所对应的目标元素(-nums[i]-nums[j])是否存在于表中。
             int diff = -nums[i]-nums[j];
-            // 边将nums[j]添加到哈希表中，边检查每个元素所对应的目标元素(-nums[i]-nums[i])是否存在于表中。
             HASH_FIND_INT(hashTable, &diff, h);
             
             if (!h) {
