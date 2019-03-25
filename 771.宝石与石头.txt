@@ -1,4 +1,22 @@
-1.哈希表
+1.暴力解法
+
+int numJewelsInStones(char* J, char* S) {
+    int count = 0, len_S = strlen(S), len_J = strlen(J);
+
+    for (int i = 0; i < len_S; i++) {
+        for (int j = 0; j < len_J; j++) {
+            if(J[j] == S[i]) {
+                ++count;
+                break;
+            }   
+        }            
+    }
+            
+    return count;
+}
+
+
+2.哈希表
 
 int numJewelsInStones(char* J, char* S) {
     int hash[52] = {0}, len_J = strlen(J), len_S = strlen(S), count = 0;
@@ -21,7 +39,7 @@ int numJewelsInStones(char* J, char* S) {
 }
 
 
-2.uthash
+3.uthash
 
 // uthash是一个用c语言编写的开源库，使用宏实现了哈希表的增删改查等功能。
 int numJewelsInStones(char* J, char* S) {
@@ -50,23 +68,5 @@ int numJewelsInStones(char* J, char* S) {
             count++;
     }
     
-    return count;
-}
-
-
-3.暴力解法
-
-int numJewelsInStones(char* J, char* S) {
-    int count = 0, len_S = strlen(S), len_J = strlen(J);
-
-    for (int i = 0; i < len_S; i++) {
-        for (int j = 0; j < len_J; j++) {
-            if(J[j] == S[i]) {
-                ++count;
-                break;
-            }   
-        }            
-    }
-            
     return count;
 }
