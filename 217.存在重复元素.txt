@@ -1,4 +1,18 @@
-1.哈希表
+1.暴力解法
+
+bool containsDuplicate(int* nums, int numsSize) {
+    for (int i = 0; i < numsSize; i++) {
+        for (int j = i+1; j < numsSize; j++) {
+            if (nums[i] == nums[j])
+                return true;
+        }
+    }
+    
+    return false;
+}
+
+
+2.哈希表
 
 bool containsDuplicate(int* nums, int numsSize) {
     if (numsSize == 0)
@@ -33,7 +47,7 @@ bool containsDuplicate(int* nums, int numsSize) {
 }
 
 
-2.uthash
+3.uthash
 
 // uthash是一个用c语言编写的开源库，使用宏实现了哈希表的增删改查等功能。
 bool containsDuplicate(int* nums, int numsSize) {
@@ -64,7 +78,7 @@ bool containsDuplicate(int* nums, int numsSize) {
 }
 
 
-3.排序
+4.排序
 
 // 快排函数(升序)。
 int compare(const void* a, const void* b) {
@@ -77,20 +91,6 @@ bool containsDuplicate(int* nums, int numsSize) {
     for (int i = 1; i < numsSize; i++) {
         if (nums[i] == nums[i-1])
             return true;
-    }
-    
-    return false;
-}
-
-
-4.暴力解法
-
-bool containsDuplicate(int* nums, int numsSize) {
-    for (int i = 0; i < numsSize; i++) {
-        for (int j = i+1; j < numsSize; j++) {
-            if (nums[i] == nums[j])
-                return true;
-        }
     }
     
     return false;
