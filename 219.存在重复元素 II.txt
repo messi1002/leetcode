@@ -28,23 +28,24 @@ bool containsNearbyDuplicate(int* nums, int numsSize, int k) {
     int len = 0;
     
     for (int i = 0; i < numsSize; i++) {
-        struct hash *h1, *h2;
+        struct hash *h;
         
         // 控制滑动窗口的大小，即哈希表的大小。
         if (len > k) {
-            HASH_FIND_INT(hashTable, nums+len-k-1, h1);
-            HASH_DEL(hashTable, h1);
+            HASH_FIND_INT(hashTable, nums+len-k-1, h);
+            HASH_DEL(hashTable, h);
+            h = NULL;
         }
 
-        HASH_FIND_INT(hashTable, nums+i, h2);
+        HASH_FIND_INT(hashTable, nums+i, h);
 
         // 查找当前滑动窗口内有没有重复值。
-        if (h2)
+        if (h)
             return true;
         else {
-            h2 = malloc(sizeof(struct hash));
-            h2->value = nums[i];
-            HASH_ADD_INT(hashTable, value, h2);
+            h = malloc(sizeof(struct hash));
+            h->value = nums[i];
+            HASH_ADD_INT(hashTable, value, h);
             len++;
         }
     }
