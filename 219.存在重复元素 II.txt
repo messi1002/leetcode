@@ -37,9 +37,9 @@ bool containsNearbyDuplicate(int* nums, int numsSize, int k) {
             h = NULL;
         }
 
+        // 查找当前哈希表中有没有重复值。
         HASH_FIND_INT(hashTable, nums+i, h);
 
-        // 查找当前滑动窗口内有没有重复值。
         if (h)
             return true;
         else {
