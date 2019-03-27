@@ -1,4 +1,4 @@
-1.¹şÏ£±í¡£
+1.¹şÏ£±í
 
 int repeatedNTimes(int* A, int ASize) {
     int hash[10000] = {0};
