@@ -63,7 +63,7 @@ bool randomizedCollectionRemove(RandomizedCollection* obj, int val) {
     struct hash *h1, *h2; 
     HASH_FIND_INT(obj->hashTable, &val, h1);
     
-    // 如果存在，则将数组中最后一个元素移到此元素的位置，并且更新记录最后一个元素下标的obj->value数组。
+    // 如果存在，则将数组中最后一个元素移到此元素的位置(保证0~obj->size的数组值有效)，并且更新记录最后一个元素下标的obj->value数组。
     // 注意:被删除的元素存在多个时，默认删除数组下标值最大的那个。
     if (h1) {
         obj->arr[h1->value[h1->size-1]] = obj->arr[obj->size-1]; 
