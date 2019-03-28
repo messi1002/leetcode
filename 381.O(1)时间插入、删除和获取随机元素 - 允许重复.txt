@@ -33,8 +33,7 @@ bool randomizedCollectionInsert(RandomizedCollection* obj, int val) {
     HASH_FIND_INT(obj->hashTable, &val, h);
     
     // 如果val不存在，则添加。
-    if (!h) {
-    
+    if (!h) {    
         h = malloc(sizeof(struct hash));
         h->key = val;
         // 存入数组、并记录其在数组中存储的下标值——便于删除元素。
