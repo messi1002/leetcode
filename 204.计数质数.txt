@@ -10,13 +10,13 @@ int countPrimes(int n) {
     
     // 先排除偶数。
     for (int i = 5; i < n; i += 2) {
-        int q = sqrt(i);
+        int s = sqrt(i);
         
         // 根据质数性质，只需要判断其是否可以整除2-sqrt(i)，就可知其是否是质数。
-        for (int j = 2; j <= q; j++) {
+        for (int j = 2; j <= s; j++) {
             if (i % j == 0)
                 break;
-            if (j == q)
+            if (j == s)
                 count++;
         }
     }
