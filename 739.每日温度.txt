@@ -27,6 +27,7 @@ int* dailyTemperatures(int* T, int TSize, int* returnSize) {
 
 
 2.栈
+
 int* dailyTemperatures(int* T, int TSize, int* returnSize) {
     int* result = (int*)malloc(sizeof(int)*TSize);
     // 用栈记录T的下标。
