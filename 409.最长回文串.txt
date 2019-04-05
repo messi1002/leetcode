@@ -1,5 +1,6 @@
 1.哈希表
 
+// 哈希表。
 int longestPalindrome(char* s) {
     int hash[52] = {0}, flag = 1, len = strlen(s), result = 0;
     
@@ -18,7 +19,7 @@ int longestPalindrome(char* s) {
                 flag = 0;
             }
             
-            // 出现偶数次的字母才能构成回文串。
+            // 除中心外的对称位置必须是相同的字母(即出现偶数次的字母)。
             result += (hash[i]/2) * 2;
         }
     }
