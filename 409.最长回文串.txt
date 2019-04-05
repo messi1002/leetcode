@@ -1,6 +1,5 @@
 1.¹şÏ£±í
 
-// ¹şÏ£±í¡£
 int longestPalindrome(char* s) {
     int hash[52] = {0}, flag = 1, len = strlen(s), result = 0;
     
