@@ -1,4 +1,5 @@
 # LeetCode-C
+#### [C语言常用库函数整理](https://messi1002.top/2019/02/20/C%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0%E6%95%B4%E7%90%86/)<br>
 #### The code is included in the file, and the following link is the Q&A blog.<br/>
 
 | # | Title-ch | Title-en | Difficulty |
