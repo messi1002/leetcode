@@ -1,0 +1,40 @@
+1.哈希表
+
+bool isAnagram(char* s, char* t) {
+    int hash[26] = {0}, len1 = strlen(s), len2 = strlen(t);
+
+    // 用哈希表判断两个字符串中的字符出现次数是否一致。
+    for (int i = 0; i < len1; i++)
+        hash[s[i]-'a']++;    
+    for (int i = 0; i < len2; i++)
+        hash[t[i]-'a']--;  
+    for (int i = 0; i < 26; i++) {
+        if (hash[i] != 0)
+            return false;
+    }
+    
+    return true;
+}
+
+
+2.排序
+
+// 快排函数(升序)。
+int compare(const void* a, const void* b) {
+    return (*(char*)a)-(*(char*)b);
+}
+
+// 排序后再判断两字符串是否相等。
+bool isAnagram(char* s, char* t) {
+    if (strlen(s) != strlen(t))
+        return false;
+    else {
+        qsort(s, strlen(s), sizeof(char), compare);    
+        qsort(t, strlen(t), sizeof(char), compare);  
+        
+        if (strcmp(s, t) == 0)
+            return true;
+        else
+            return false;
+    }
+}
