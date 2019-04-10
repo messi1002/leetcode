@@ -37,7 +37,7 @@ char* frequencySort(char* s) {
 }
 
 
-2. 哈希表 + 字符数组
+2.哈希表 + 字符数组
 
 char* frequencySort(char* s) {
     int hash[128] = {0}, len = strlen(s);
@@ -93,6 +93,7 @@ char* frequencySort(char* s) {
 
 3.哈希表(uthash)
 
+// uthash是一个用c语言编写的开源库，使用宏实现了哈希表的增删改查等功能。
 struct hash {
     int key;
     int count;
