@@ -1,4 +1,4 @@
-1.字符串 + 数组
+1.暴力解法(字符串 + 数组)
 
 bool wordPattern(char* pattern, char* str) {
     int len = (strlen(str)/2)+2, size = 0;
