@@ -89,3 +89,56 @@ char* frequencySort(char* s) {
     
     return s;
 }
+
+
+3.哈希表(uthash)
+
+struct hash {
+    int key;
+    int count;
+    UT_hash_handle hh; 
+};
+
+// 降序排列。
+int count_sort(struct hash* a, struct hash* b) {
+    return b->count - a->count;
+}
+
+char* frequencySort(char* s) { 
+    struct hash* hashTable = NULL;
+    int len = strlen(s);
+    char* result = malloc(sizeof(char)*(len+1));
+    strcpy(result, "");
+    
+    // 用哈希表统计不同字符的出现次数。
+    for (int i = 0; i < len; i++) {
+        struct hash* h;
+        int n = s[i];
+        HASH_FIND_INT(hashTable, &n, h);
+        
+        if (!h) {
+            h = malloc(sizeof(struct hash));
+            h->key = s[i];
+            h->count = 1;
+            HASH_ADD_INT(hashTable, key, h);
+        }
+        else
+            h->count++;
+    }
+    
+    // 按出现次数排序。
+    HASH_SORT(hashTable, count_sort);
+    
+    // 遍历排序后的哈希表。
+    for (struct hash* s = hashTable; s != NULL; s = s->hh.next) {
+        while (s->count > 0) {
+            char s1[2];
+            s1[0] = s->key;
+            s1[1] = '\0';
+            strcat(result, s1);
+            s->count--;
+        }
+    }
+    
+    return result;
+}
