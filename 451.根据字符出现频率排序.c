@@ -127,7 +127,7 @@ char* frequencySort(char* s) {
             h->count++;
     }
     
-    // 按出现次数排序。
+    // 按出现次数排序键值(字符)。
     HASH_SORT(hashTable, count_sort);
     
     // 遍历排序后的哈希表。
