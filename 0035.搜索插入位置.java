@@ -1,4 +1,4 @@
-# 1.暴力解法
+// 1.暴力解法
 public int searchInsert(int[] nums, int target) {
     int len = nums.length;
     for (int i = 0; i < len; i++) {
@@ -9,7 +9,7 @@ public int searchInsert(int[] nums, int target) {
     return len;
 }
 
-# 2.二分查找
+// 2.二分查找
 public int searchInsert(int[] nums, int target) {
     int left = 0, right = nums.length - 1;
     while (left <= right) {

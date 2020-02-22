@@ -1,4 +1,4 @@
-# 1.暴力解法
+// 1.暴力解法
 int searchInsert(int* nums, int numsSize, int target) {
     for (int i = 0; i < numsSize; i++) {
         if (nums[i] >= target) {
@@ -8,7 +8,7 @@ int searchInsert(int* nums, int numsSize, int target) {
     return numsSize;
 }
 
-# 2.二分查找
+// 2.二分查找
 int searchInsert(int* nums, int numsSize, int target) {
     int left = 0, right = numsSize - 1;
     while (left <= right) {
