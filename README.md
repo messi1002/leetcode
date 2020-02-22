@@ -1,8 +1,8 @@
 # leetcode
 #### The code is included in the file, and the following link is the Q&A blog.<br/>
 
-#### [C语言常用库函数整理](https://messi1002.top/2019/02/20/C%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0%E6%95%B4%E7%90%86/)<br>
-#### [树的遍历(递归+迭代)](https://messi1002.top/2019/06/11/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86-%E9%80%92%E5%BD%92-%E8%BF%AD%E4%BB%A3/)
+#### [1.C语言常用库函数整理](https://messi1002.top/2019/02/20/C%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0%E6%95%B4%E7%90%86/)<br>
+#### [2.树的遍历(递归+迭代)](https://messi1002.top/2019/06/11/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86-%E9%80%92%E5%BD%92-%E8%BF%AD%E4%BB%A3/)
 
 | #     | Java  | C     | Difficulty |
 | :---- | :---- | :---- | :----      |
