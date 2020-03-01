@@ -1,4 +1,4 @@
-// 1.中序遍历二叉搜索树得到升序数列，再找到第k大节点的值
+// 1.中序遍历二叉搜索树得到升序数列，再找到第k大节点的值。
 private List<Integer> list;
 
 private void inorderTraversal(TreeNode root) {
