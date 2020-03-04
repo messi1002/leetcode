@@ -28,11 +28,15 @@
 | 0387  | | [字符串中的第一个唯一字符](https://blog.csdn.net/qq_41979043/article/details/89042241) | Easy |
 | 0409  | | [最长回文串](https://blog.csdn.net/qq_41979043/article/details/89043730) | Easy |
 | 0447  | | [回旋镖的数量](https://blog.csdn.net/qq_41979043/article/details/88817649) | Easy |
+| 0450  | [删除二叉搜索树中的节点](http://localhost:4000/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/) | [删除二叉搜索树中的节点](http://localhost:4000/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/) | Medium |
 | 0451  | | [根据字符出现频率排序](https://blog.csdn.net/qq_41979043/article/details/88730879) | Medium |
 | 0454  | | [四数相加 Ⅱ](https://blog.csdn.net/qq_41979043/article/details/88778391) | Medium |
 | 0500  | | [键盘行](https://blog.csdn.net/qq_41979043/article/details/88914806) | Easy |
+| 0700  | [二叉搜索树中的搜索](http://localhost:4000/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/) | [二叉搜索树中的搜索](http://localhost:4000/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/) | Easy |
+| 0701  | [二叉搜索树中的插入操作](http://localhost:4000/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/) | [二叉搜索树中的插入操作](http://localhost:4000/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/) | Medium |
 | 0739  | | [每日温度](https://blog.csdn.net/qq_41979043/article/details/89019069) | Medium |
 | 0771  | | [宝石与石头](https://blog.csdn.net/qq_41979043/article/details/88763451) | Easy |
+| 0938  | [二叉搜索树的范围和](http://localhost:4000/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/) | [二叉搜索树的范围和](http://localhost:4000/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/) | Easy |
 | 0961  | | [重复 N 次的元素](https://blog.csdn.net/qq_41979043/article/details/88858952) | Easy |
 | 1114  | [按序打印](https://messi1002.top/2020/03/01/LeetCode-1114-%E6%8C%89%E5%BA%8F%E6%89%93%E5%8D%B0%EF%BC%88Easy%EF%BC%89Java%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | | Easy |
 | 1115  | [交替打印FooBar](https://messi1002.top/2020/03/01/LeetCode-1115-%E4%BA%A4%E6%9B%BF%E6%89%93%E5%8D%B0FooBar%EF%BC%88Medium%EF%BC%89Java%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | | Medium |
@@ -40,3 +44,4 @@
 | 1188  | [设计有限阻塞队列](https://messi1002.top/2020/03/01/LeetCode-1188-%E8%AE%BE%E8%AE%A1%E6%9C%89%E9%99%90%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%EF%BC%88Medium%EF%BC%89Java%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | | Medium |
 | 1195  | [交替打印字符串](https://messi1002.top/2020/03/01/LeetCode-1195-%E4%BA%A4%E6%9B%BF%E6%89%93%E5%8D%B0%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%88Medium%EF%BC%89Java%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | | Medium |
 | 1226  | [哲学家进餐](https://messi1002.top/2020/03/01/LeetCode-1226-%E5%93%B2%E5%AD%A6%E5%AE%B6%E8%BF%9B%E9%A4%90%EF%BC%88Medium%EF%BC%89Java%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | | Medium |
+| 面试题54 | [二叉搜索树的第k大节点](http://localhost:4000/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/) | [二叉搜索树的第k大节点](http://localhost:4000/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/) | Easy |
