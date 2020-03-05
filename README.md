@@ -1,8 +1,8 @@
 # leetcode
 #### The code is included in the file, and the following link is the Q&A blog.<br/>
 
-#### [1.C语言常用库函数整理](https://messi1002.top/2019/02/20/C%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0%E6%95%B4%E7%90%86/)<br>
-#### [2.树的遍历(递归+迭代)](https://messi1002.top/2019/06/11/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86-%E9%80%92%E5%BD%92-%E8%BF%AD%E4%BB%A3/)
+#### [1.C语言常用库函数整理](https://messi1002.top/2018/12/20/C%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0%E6%95%B4%E7%90%86/)<br>
+#### [2.树的遍历(递归+迭代)](https://messi1002.top/2019/02/11/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86-%E9%80%92%E5%BD%92-%E8%BF%AD%E4%BB%A3/)
 #### [3.二叉搜索树的常用操作](https://messi1002.top/2019/02/15/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/)
 
 | #     | Java  | C     | Difficulty |
@@ -12,6 +12,7 @@
 | 0018  | | [四数之和](https://blog.csdn.net/qq_41979043/article/details/88772602) | Medium |
 | 0035  | [搜索插入位置](https://messi1002.top/2019/01/04/LeetCode-35-%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE%EF%BC%88Easy%EF%BC%89Java%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | [搜索插入位置](https://messi1002.top/2019/01/04/LeetCode-35-%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE%EF%BC%88Easy%EF%BC%89C%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | Easy |
 | 0049  | | [字母异位词分组](https://blog.csdn.net/qq_41979043/article/details/88800133) | Medium |
+| 0110  | [平衡二叉树](https://messi1002.top/2019/02/08/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E6%80%A7%E8%B4%A8/) | [平衡二叉树](https://messi1002.top/2019/02/08/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E6%80%A7%E8%B4%A8/) | Easy |
 | 0149  | [直线上最多的点数](https://messi1002.top/2019/02/23/LeetCode-149-%E7%9B%B4%E7%BA%BF%E4%B8%8A%E6%9C%80%E5%A4%9A%E7%9A%84%E7%82%B9%E6%95%B0%EF%BC%88Hard%EF%BC%89Java%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | [直线上最多的点数](https://messi1002.top/2019/02/23/LeetCode-149-%E7%9B%B4%E7%BA%BF%E4%B8%8A%E6%9C%80%E5%A4%9A%E7%9A%84%E7%82%B9%E6%95%B0%EF%BC%88Hard%EF%BC%89C%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | Hard |
 | 0172  | [阶乘后的零](https://messi1002.top/2019/05/05/LeetCode-172-%E9%98%B6%E4%B9%98%E5%90%8E%E7%9A%84%E9%9B%B6%EF%BC%88Easy%EF%BC%89Java%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | [阶乘后的零](https://messi1002.top/2019/05/05/LeetCode-172-%E9%98%B6%E4%B9%98%E5%90%8E%E7%9A%84%E9%9B%B6%EF%BC%88Easy%EF%BC%89C%E8%AF%AD%E8%A8%80%E9%A2%98%E8%A7%A3/) | Easy |
 | 0202  | | [快乐数](https://blog.csdn.net/qq_41979043/article/details/88684208) | Easy |
