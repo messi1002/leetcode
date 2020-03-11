@@ -1,5 +1,5 @@
 // 1.用被删除节点的前驱节点(是其左子树中的最大值所在的节点)替换被删除的节点
-// 返回以root为根节点的二分搜索树中的最大节点
+// 返回以root为根节点的二分搜索树中的最大节点的节点值
 int findMax(struct TreeNode* root) {
     if (!root->right) {
         return root->val;
@@ -39,7 +39,7 @@ struct TreeNode* deleteNode(struct TreeNode* root, int key) {
 }
 
 // 2.用被删除节点的后继节点(是其右子树中的最小值所在的节点)替换被删除的节点
-// 返回以root为根节点的二分搜索树中的最小节点
+// 返回以root为根节点的二分搜索树中的最小节点的节点值
 int findMin(struct TreeNode* root) {
     if (!root->left) {
         return root->val;
